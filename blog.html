@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Bhaiya - Best Digital Marketing Agency</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ===================== NAV Section ===================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <!-- <a class="navbar-brand" href="#">
+                Digital <span class="brand-highlight">BHAIYA</span>
+            </a> -->
+            <a class="navbar-brand p-0" href="#">
+                <img src="./logo.png" alt="Digital Bhaiya" class="brand-logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">
+                        Digital <span class="text-primary">BHAIYA</span>
+                    </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./packages.html">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blogs</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0 ms-lg-3 flex-column flex-lg-row">
+                        <a href="tel:+919621056436" class="btn btn-custom btn-call w-100 w-lg-auto">
+                            <i class="fas fa-phone-alt me-1"></i> Call Now
+                        </a>
+                        <a href="https://wa.me/919621056436" class="btn btn-custom btn-whatsapp w-100 w-lg-auto">
+                            <i class="fab fa-whatsapp me-1"></i> Whatsapp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="blog-sidebar" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="row g-5">
+
+                <div class="col-lg-4">
+                    <div class="sticky-top" style="top: 100px;">
+
+                        <div class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+                            <h5 class="fw-bold mb-3">Search</h5>
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-light border-0"
+                                    placeholder="Type keywords...">
+                                <button class="btn btn-primary text-white"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+                            <h5 class="fw-bold mb-3">Categories</h5>
+                            <div class="list-group list-group-flush custom-sidebar-tabs" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action active d-flex justify-content-between align-items-center"
+                                    id="list-all-list" data-bs-toggle="list" href="#list-all" role="tab">
+                                    <span>All Services</span> <span
+                                        class="badge bg-light text-dark rounded-pill">6</span>
+                                </a>
+                                <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                                    id="list-gmb-list" data-bs-toggle="list" href="#list-gmb" role="tab">
+                                    <span>Google Listing</span> <span
+                                        class="badge bg-light text-dark rounded-pill">6</span>
+                                </a>
+                                <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                                    id="list-ads-list" data-bs-toggle="list" href="#list-ads" role="tab">
+                                    <span>Google Ads</span> <span class="badge bg-light text-dark rounded-pill">6</span>
+                                </a>
+                                <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                                    id="list-social-list" data-bs-toggle="list" href="#list-social" role="tab">
+                                    <span>Social Media</span> <span
+                                        class="badge bg-light text-dark rounded-pill">6</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="tab-content" id="nav-tabContent">
+
+                        <div class="tab-pane fade show active" id="list-all" role="tabpanel">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative">
+                                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
+                                                class="card-img-top" alt="Blog 1">
+                                            <span
+                                                class="badge bg-primary position-absolute top-0 start-0 m-3">Marketing</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2">
+                                                <span><i class="fas fa-user me-1"></i> Admin</span>
+                                                <span><i class="fas fa-calendar-alt me-1"></i> 25 Dec, 2025</span>
+                                            </div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">The Ultimate
+                                                    Guide to Digital Marketing</a></h5>
+                                            <p class="text-secondary small mb-3">Learn the basics of SEO, PPC, and
+                                                Social Media in one place.</p>
+                                            <a href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative">
+                                            <img src="https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=600&q=80"
+                                                class="card-img-top" alt="Blog 2">
+                                            <span class="badge bg-danger position-absolute top-0 start-0 m-3">SEO</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2">
+                                                <span><i class="fas fa-user me-1"></i> Rahul V.</span>
+                                                <span><i class="fas fa-calendar-alt me-1"></i> 22 Dec, 2025</span>
+                                            </div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">SEO Trends You
+                                                    Can't Ignore</a></h5>
+                                            <p class="text-secondary small mb-3">Why voice search and AI are changing
+                                                SEO forever.</p>
+                                            <a href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative">
+                                            <img src="https://images.unsplash.com/photo-1562577940-48e9463f08b2?w=600&q=80"
+                                                class="card-img-top" alt="Blog 3">
+                                            <span
+                                                class="badge bg-warning text-dark position-absolute top-0 start-0 m-3">Business</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2">
+                                                <span><i class="fas fa-user me-1"></i> Admin</span>
+                                                <span><i class="fas fa-calendar-alt me-1"></i> 20 Dec, 2025</span>
+                                            </div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">Small Business
+                                                    Growth Hacks</a></h5>
+                                            <p class="text-secondary small mb-3">Simple strategies to double your
+                                                revenue in 6 months.</p>
+                                            <a href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 blog-hidden d-none">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative"><img
+                                                src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&q=80"
+                                                class="card-img-top" alt="Blog 4"><span
+                                                class="badge bg-success position-absolute top-0 start-0 m-3">Design</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2"><span><i
+                                                        class="fas fa-user me-1"></i> Admin</span><span><i
+                                                        class="fas fa-calendar-alt me-1"></i> 18 Dec 25</span></div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">Web Design
+                                                    Principles</a></h5>
+                                            <p class="text-secondary small mb-3">Minimalism vs Maximalism in 2025.</p><a
+                                                href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 blog-hidden d-none">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative"><img
+                                                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80"
+                                                class="card-img-top" alt="Blog 5"><span
+                                                class="badge bg-info position-absolute top-0 start-0 m-3">Analytics</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2"><span><i
+                                                        class="fas fa-user me-1"></i> Admin</span><span><i
+                                                        class="fas fa-calendar-alt me-1"></i> 15 Dec 25</span></div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">Understanding
+                                                    Data</a></h5>
+                                            <p class="text-secondary small mb-3">How to read Google Analytics 4 reports.
+                                            </p><a href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 blog-hidden d-none">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative"><img
+                                                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80"
+                                                class="card-img-top" alt="Blog 6"><span
+                                                class="badge bg-dark position-absolute top-0 start-0 m-3">Content</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2"><span><i
+                                                        class="fas fa-user me-1"></i> Admin</span><span><i
+                                                        class="fas fa-calendar-alt me-1"></i> 10 Dec 25</span></div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">Content Writing
+                                                    101</a></h5>
+                                            <p class="text-secondary small mb-3">Writing blogs that rank and convert.
+                                            </p><a href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-4"><button
+                                    class="btn btn-outline-primary rounded-pill px-4 fw-bold loadMoreTabBtn">Load
+                                    More</button></div>
+                        </div>
+
+                        <div class="tab-pane fade" id="list-gmb" role="tabpanel">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative">
+                                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80"
+                                                class="card-img-top" alt="GMB 1">
+                                            <span class="badge bg-danger position-absolute top-0 start-0 m-3">GMB</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2">
+                                                <span><i class="fas fa-user me-1"></i> Admin</span>
+                                                <span><i class="fas fa-calendar-alt me-1"></i> 24 Dec 25</span>
+                                            </div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">Rank #1 on
+                                                    Google Maps</a></h5>
+                                            <p class="text-secondary small mb-3">Top strategies to optimize your
+                                                profile.</p>
+                                            <a href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative">
+                                            <img src="https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?w=600&q=80"
+                                                class="card-img-top" alt="GMB 2">
+                                            <span class="badge bg-danger position-absolute top-0 start-0 m-3">GMB</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2">
+                                                <span><i class="fas fa-user me-1"></i> Admin</span>
+                                                <span><i class="fas fa-calendar-alt me-1"></i> 20 Dec 25</span>
+                                            </div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">Getting More
+                                                    Reviews</a></h5>
+                                            <p class="text-secondary small mb-3">How to ask customers for 5-star
+                                                reviews.</p>
+                                            <a href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative">
+                                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&q=80"
+                                                class="card-img-top" alt="GMB 3">
+                                            <span class="badge bg-danger position-absolute top-0 start-0 m-3">GMB</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2">
+                                                <span><i class="fas fa-user me-1"></i> Admin</span>
+                                                <span><i class="fas fa-calendar-alt me-1"></i> 18 Dec 25</span>
+                                            </div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">GMB Suspension
+                                                    Fix</a></h5>
+                                            <p class="text-secondary small mb-3">What to do if your listing gets
+                                                suspended.</p>
+                                            <a href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 blog-hidden d-none">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative"><img
+                                                src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80"
+                                                class="card-img-top" alt="GMB 4"><span
+                                                class="badge bg-danger position-absolute top-0 start-0 m-3">GMB</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2"><span><i
+                                                        class="fas fa-user me-1"></i> Admin</span><span><i
+                                                        class="fas fa-calendar-alt me-1"></i> 15 Dec 25</span></div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">Using GMB
+                                                    Posts</a></h5>
+                                            <p class="text-secondary small mb-3">Engage customers with weekly updates.
+                                            </p><a href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 blog-hidden d-none">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative"><img
+                                                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80"
+                                                class="card-img-top" alt="GMB 5"><span
+                                                class="badge bg-danger position-absolute top-0 start-0 m-3">GMB</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2"><span><i
+                                                        class="fas fa-user me-1"></i> Admin</span><span><i
+                                                        class="fas fa-calendar-alt me-1"></i> 12 Dec 25</span></div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">NAP
+                                                    Consistency</a></h5>
+                                            <p class="text-secondary small mb-3">Why Name, Address, Phone must match.
+                                            </p><a href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 blog-hidden d-none">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative"><img
+                                                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80"
+                                                class="card-img-top" alt="GMB 6"><span
+                                                class="badge bg-danger position-absolute top-0 start-0 m-3">GMB</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2"><span><i
+                                                        class="fas fa-user me-1"></i> Admin</span><span><i
+                                                        class="fas fa-calendar-alt me-1"></i> 10 Dec</span></div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">GMB Insights
+                                                    Guide</a></h5>
+                                            <p class="text-secondary small mb-3">Understanding how customers find you.
+                                            </p><a href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-4"><button
+                                    class="btn btn-outline-primary rounded-pill px-4 fw-bold loadMoreTabBtn">Load
+                                    More</button></div>
+                        </div>
+
+                        <div class="tab-pane fade" id="list-ads" role="tabpanel">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative"><img
+                                                src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=600&q=80"
+                                                class="card-img-top" alt="Ads 1"><span
+                                                class="badge bg-primary position-absolute top-0 start-0 m-3">PPC</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2"><span><i
+                                                        class="fas fa-user me-1"></i> Admin</span><span><i
+                                                        class="fas fa-calendar-alt me-1"></i> 23 Dec</span></div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">Keyword
+                                                    Research</a></h5>
+                                            <p class="text-secondary small mb-3">Finding the right keywords for ads.</p>
+                                            <a href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative"><img
+                                                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
+                                                class="card-img-top" alt="Ads 2"><span
+                                                class="badge bg-primary position-absolute top-0 start-0 m-3">PPC</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2"><span><i
+                                                        class="fas fa-user me-1"></i> Admin</span><span><i
+                                                        class="fas fa-calendar-alt me-1"></i> 21 Dec</span></div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">Ad
+                                                    Copywriting</a></h5>
+                                            <p class="text-secondary small mb-3">Writing ads that get clicks.</p><a
+                                                href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative"><img
+                                                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80"
+                                                class="card-img-top" alt="Ads 3"><span
+                                                class="badge bg-primary position-absolute top-0 start-0 m-3">PPC</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2"><span><i
+                                                        class="fas fa-user me-1"></i> Admin</span><span><i
+                                                        class="fas fa-calendar-alt me-1"></i> 19 Dec</span></div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">Budget
+                                                    Management</a></h5>
+                                            <p class="text-secondary small mb-3">How much to spend on ads?</p><a
+                                                href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 blog-hidden d-none">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative"><img
+                                                src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&q=80"
+                                                class="card-img-top" alt="Ads 4"><span
+                                                class="badge bg-primary position-absolute top-0 start-0 m-3">PPC</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2"><span><i
+                                                        class="fas fa-user me-1"></i> Admin</span><span><i
+                                                        class="fas fa-calendar-alt me-1"></i> 16 Dec</span></div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">Quality Score
+                                                    Tips</a></h5>
+                                            <p class="text-secondary small mb-3">Lower your cost per click (CPC).</p><a
+                                                href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 blog-hidden d-none">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative"><img
+                                                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80"
+                                                class="card-img-top" alt="Ads 5"><span
+                                                class="badge bg-primary position-absolute top-0 start-0 m-3">PPC</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2"><span><i
+                                                        class="fas fa-user me-1"></i> Admin</span><span><i
+                                                        class="fas fa-calendar-alt me-1"></i> 13 Dec</span></div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">Negative
+                                                    Keywords</a></h5>
+                                            <p class="text-secondary small mb-3">Stop paying for junk clicks.</p><a
+                                                href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 blog-hidden d-none">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative"><img
+                                                src="https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=600&q=80"
+                                                class="card-img-top" alt="Ads 6"><span
+                                                class="badge bg-primary position-absolute top-0 start-0 m-3">PPC</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2"><span><i
+                                                        class="fas fa-user me-1"></i> Admin</span><span><i
+                                                        class="fas fa-calendar-alt me-1"></i> 09 Dec</span></div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">Display Ads
+                                                    Guide</a></h5>
+                                            <p class="text-secondary small mb-3">Using banner ads effectively.</p><a
+                                                href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-4"><button
+                                    class="btn btn-outline-primary rounded-pill px-4 fw-bold loadMoreTabBtn">Load
+                                    More</button></div>
+                        </div>
+
+                        <div class="tab-pane fade" id="list-social" role="tabpanel">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative"><img
+                                                src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&q=80"
+                                                class="card-img-top" alt="Social 1"><span
+                                                class="badge bg-warning text-dark position-absolute top-0 start-0 m-3">Social</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2"><span><i
+                                                        class="fas fa-user me-1"></i> Admin</span><span><i
+                                                        class="fas fa-calendar-alt me-1"></i> 22 Dec</span></div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">Instagram
+                                                    Reels</a></h5>
+                                            <p class="text-secondary small mb-3">How to go viral on Instagram.</p><a
+                                                href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative"><img
+                                                src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=600&q=80"
+                                                class="card-img-top" alt="Social 2"><span
+                                                class="badge bg-warning text-dark position-absolute top-0 start-0 m-3">Social</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2"><span><i
+                                                        class="fas fa-user me-1"></i> Admin</span><span><i
+                                                        class="fas fa-calendar-alt me-1"></i> 20 Dec</span></div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">Hashtag
+                                                    Strategy</a></h5>
+                                            <p class="text-secondary small mb-3">Using the right tags for reach.</p><a
+                                                href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative"><img
+                                                src="https://images.unsplash.com/photo-1562577940-48e9463f08b2?w=600&q=80"
+                                                class="card-img-top" alt="Social 3"><span
+                                                class="badge bg-warning text-dark position-absolute top-0 start-0 m-3">Social</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2"><span><i
+                                                        class="fas fa-user me-1"></i> Admin</span><span><i
+                                                        class="fas fa-calendar-alt me-1"></i> 17 Dec</span></div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">Facebook
+                                                    Ads</a></h5>
+                                            <p class="text-secondary small mb-3">Beginner guide to FB ads manager.</p><a
+                                                href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 blog-hidden d-none">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative"><img
+                                                src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80"
+                                                class="card-img-top" alt="Social 4"><span
+                                                class="badge bg-warning text-dark position-absolute top-0 start-0 m-3">Social</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2"><span><i
+                                                        class="fas fa-user me-1"></i> Admin</span><span><i
+                                                        class="fas fa-calendar-alt me-1"></i> 14 Dec</span></div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">LinkedIn
+                                                    Growth</a></h5>
+                                            <p class="text-secondary small mb-3">B2B marketing on LinkedIn.</p><a
+                                                href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 blog-hidden d-none">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative"><img
+                                                src="https://images.unsplash.com/photo-1611262588024-d12430b98920?w=600&q=80"
+                                                class="card-img-top" alt="Social 5"><span
+                                                class="badge bg-warning text-dark position-absolute top-0 start-0 m-3">Social</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2"><span><i
+                                                        class="fas fa-user me-1"></i> Admin</span><span><i
+                                                        class="fas fa-calendar-alt me-1"></i> 11 Dec</span></div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">Influencer
+                                                    Marketing</a></h5>
+                                            <p class="text-secondary small mb-3">Working with micro-influencers.</p><a
+                                                href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 blog-hidden d-none">
+                                    <div class="card h-100 border-0 shadow-sm rounded-4 blog-card overflow-hidden">
+                                        <div class="blog-img-wrapper position-relative"><img
+                                                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80"
+                                                class="card-img-top" alt="Social 6"><span
+                                                class="badge bg-warning text-dark position-absolute top-0 start-0 m-3">Social</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <div class="d-flex justify-content-between small text-muted mb-2"><span><i
+                                                        class="fas fa-user me-1"></i> Admin</span><span><i
+                                                        class="fas fa-calendar-alt me-1"></i> 08 Dec</span></div>
+                                            <h5 class="fw-bold mb-2"><a href="#"
+                                                    class="text-dark text-decoration-none hover-primary">Social
+                                                    Calendar</a></h5>
+                                            <p class="text-secondary small mb-3">Planning your content ahead.</p><a
+                                                href="#" class="fw-bold text-primary small text-decoration-none">Read
+                                                Article <i class="fas fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-4"><button
+                                    class="btn btn-outline-primary rounded-pill px-4 fw-bold loadMoreTabBtn">Load
+                                    More</button></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer Start Here -->
+    <footer id="contact" class="footer-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="fw-bold text-white mb-3">Digital <span class="text-primary">BHAIYA</span></h3>
+                    <p class="text-white-50 small mb-3">
+                        (Division of Deecha Management Private Limited)
+                    </p>
+                    <ul class="list-unstyled text-white-50 small">
+                        <li class="mb-1"><strong>CIN:</strong> U47912UP2023PTC184584</li>
+                        <li class="mb-1"><strong>TAN:</strong> LKND10585B</li>
+                        <li><strong>GSTN:</strong> 09AAKCD1193N1Z4</li>
+                    </ul>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold text-white mb-4 position-relative section-title">Noida Office</h5>
+                    <p class="text-white-50 d-flex align-items-start">
+                        <i class="fas fa-map-marker-alt mt-1 me-3 text-primary"></i>
+                        <span>
+                            First Floor, Shop No. 76/77A, <br>
+                            Near Mc Donalds, A Block, <br>
+                            Sector 63, Noida, <br>
+                            Uttar Pradesh 201309
+                        </span>
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="fw-bold text-white mb-4 position-relative section-title">Lucknow Office</h5>
+                    <p class="text-white-50 d-flex align-items-start mb-3">
+                        <i class="fas fa-map-marker-alt mt-1 me-3 text-primary"></i>
+                        <span>
+                            3B SBI Road, Near Janki Plaza, <br>
+                            Sector G, Jankipuram, <br>
+                            Lucknow, Uttar Pradesh 226021
+                        </span>
+                    </p>
+                    <p class="text-white-50 mb-2">
+                        <i class="fas fa-phone-alt me-3 text-primary"></i>
+                        <a href="tel:+919621056436"
+                            class="text-white-50 text-decoration-none hover-white">9621056436</a>
+                    </p>
+                    <p class="text-white-50">
+                        <i class="fas fa-envelope me-3 text-primary"></i>
+                        <a href="mailto:support@digitalbhaiya.in"
+                            class="text-white-50 text-decoration-none hover-white">support@digitalbhaiya.in</a>
+                    </p>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-4 opacity-25">
+
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-white-50 mb-0">
+                        &copy; 2015-2025 All rights reserved. Designed By <a href="#"
+                            class="text-primary text-decoration-none">Digital Bhaiya</a>.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                    <ul class="list-inline mb-0 small">
+                        <li class="list-inline-item"><a href="#"
+                                class="text-white-50 text-decoration-none hover-white">Privacy Policy</a></li>
+                        <li class="list-inline-item mx-2 text-secondary">|</li>
+                        <li class="list-inline-item"><a href="#"
+                                class="text-white-50 text-decoration-none hover-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

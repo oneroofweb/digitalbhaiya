@@ -1,0 +1,644 @@
+/* =========================================
+   1. GLOBAL VARIABLES (Logo Based Theme)
+   ========================================= */
+:root {
+    /* --- Logo Colors --- */
+    --brand-blue: #2856b6;       /* Blue from 'D' and 'l' */
+    --brand-red: #e83633;        /* Red from 'D' curve */
+    --brand-green: #309647;      /* Green from 'i' and 'g' */
+    --brand-yellow: #f4b308;     /* Yellow from 'a' */
+    --brand-navy: #1c3e78;       /* Deep Navy from 'BHAIYA' text */
+
+    /* --- Functional Colors --- */
+    --primary-blue: var(--brand-blue);
+    --secondary-orange: var(--brand-yellow); 
+    --accent-red: var(--brand-red);
+    
+    /* --- Typography & Backgrounds --- */
+    --text-dark: var(--brand-navy); /* Headings will be Navy Blue */
+    --text-body: #555555;           /* Normal text */
+    --bg-light: #f4f8ff;            /* Very light blue tint */
+    --body-bg: #ffffff;
+    --white: #ffffff;
+}
+
+/* =========================================
+   2. BASIC RESET & TYPOGRAPHY
+   ========================================= */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--body-bg);
+    color: var(--text-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* =========================================
+   3. GLOBAL ELEMENT STYLES
+   ========================================= */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--brand-red); /* Hover effect using Brand Red */
+}
+
+.btn {
+    transition: all 0.3s ease-in-out;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Headings in Brand Navy Color */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--text-dark); 
+}
+
+/* =========================================
+   4. NAVBAR & OFFCANVAS STYLES
+   ========================================= */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    padding: 12px 0;
+    background-color: var(--white);
+}
+nav{
+    z-index: 999;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--brand-blue) !important;
+    letter-spacing: 0.5px;
+}
+
+.brand-highlight {
+    color: var(--brand-navy); /* BHAIYA in Navy */
+}
+
+/* Navigation Links */
+.nav-link {
+    font-weight: 600;
+    color: var(--brand-navy) !important;
+    margin: 0 10px;
+    font-size: 0.95rem;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--brand-red) !important; /* Active link Red */
+}
+
+/* Custom Buttons */
+.btn-custom {
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: transform 0.2s ease;
+}
+
+.btn-custom:hover {
+    transform: translateY(-2px);
+}
+
+/* Call Button (Red to match Logo D) */
+.btn-call {
+    background-color: var(--brand-red);
+    color: white;
+    border: 1px solid var(--brand-red);
+}
+
+.btn-call:hover {
+    background-color: white;
+    color: var(--brand-red);
+}
+
+/* Whatsapp Button (Green) */
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    border: 1px solid #25D366;
+}
+
+.btn-whatsapp:hover {
+    background-color: white;
+    color: #25D366;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 991px) {
+    .offcanvas { max-width: 80%; }
+    .offcanvas-header { border-bottom: 1px solid #eee; }
+    .nav-item { width: 100%; border-bottom: 1px dashed #f0f0f0; }
+    .nav-link { padding: 15px 0; margin: 0; }
+    .btn-custom { width: 100%; margin-top: 5px; text-align: center; }
+}
+
+@media (max-width: 350px) {
+    .navbar-brand { font-size: 1.2rem; }
+    .btn-custom { font-size: 0.8rem; padding: 6px 15px; }
+}
+
+/* =========================================
+   5. HERO SECTION STYLES
+   ========================================= */
+.hero-section {
+    padding: 100px 0;
+    /* Gentle gradient using brand colors very lightly */
+    background: linear-gradient(135deg, #f0f4ff 0%, #fff 100%);
+    min-height: 85vh;
+    position: relative;
+}
+
+.bg-primary-soft {
+    background-color: rgba(40, 86, 182, 0.1); /* Brand Blue Transparent */
+    color: var(--brand-blue) !important;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.hero-title {
+    color: var(--brand-navy);
+    line-height: 1.3;
+}
+
+/* Highlights in Hero */
+.text-primary { color: var(--brand-blue) !important; }
+
+/* Hero Buttons */
+.btn-action {
+    transition: all 0.3s ease;
+}
+
+/* Primary Action Blue */
+.btn-primary {
+    background-color: var(--brand-blue);
+    border-color: var(--brand-blue);
+}
+.btn-primary:hover {
+    background-color: var(--brand-navy);
+    border-color: var(--brand-navy);
+}
+
+.btn-outline-success {
+    color: var(--brand-green);
+    border-color: var(--brand-green);
+}
+.btn-outline-success:hover {
+    background-color: var(--brand-green);
+    color: white;
+}
+
+/* Image Float */
+.hero-img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+}
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+.animate-float { animation: float 4s ease-in-out infinite; }
+
+/* Mobile Hero */
+@media (max-width: 991px) {
+    .hero-section { padding: 60px 0; min-height: auto; }
+}
+@media (max-width: 576px) {
+    .hero-title { font-size: 2rem; }
+    .hero-desc { font-size: 1rem; }
+    .btn-action { width: 100%; padding: 12px 0; }
+    .d-flex.gap-3 { flex-direction: column; width: 100%; }
+}
+
+/* =========================================
+   6. SERVICES SECTION
+   ========================================= */
+.services-section {
+    padding: 80px 0;
+    background-color: var(--bg-light);
+}
+
+.section-divider {
+    height: 4px;
+    width: 60px;
+    border-radius: 2px;
+    margin-top: 15px;
+    background-color: var(--brand-red) !important; /* Brand Red Line */
+}
+
+.service-card {
+    background: var(--white);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid transparent; /* Ready for hover color */
+}
+
+/* Multi-color Hover borders matching Logo */
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    border-top: 4px solid var(--brand-blue); /* Default hover blue */
+}
+
+.card-badge {
+    display: inline-block;
+    padding: 8px 25px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Overriding Bootstrap Colors with Brand Colors */
+.text-danger { color: var(--brand-red) !important; }
+.bg-danger { background-color: var(--brand-red) !important; }
+.btn-outline-danger { color: var(--brand-red); border-color: var(--brand-red); }
+.btn-outline-danger:hover { background-color: var(--brand-red); color: white; }
+
+.text-primary { color: var(--brand-blue) !important; }
+.bg-primary { background-color: var(--brand-blue) !important; }
+.btn-outline-primary { color: var(--brand-blue); border-color: var(--brand-blue); }
+.btn-outline-primary:hover { background-color: var(--brand-blue); color: white; }
+
+.text-warning { color: var(--brand-yellow) !important; }
+.bg-warning { background-color: var(--brand-yellow) !important; color: #fff !important;}
+.btn-outline-warning { color: var(--brand-yellow); border-color: var(--brand-yellow); }
+.btn-outline-warning:hover { background-color: var(--brand-yellow); color: white; }
+
+.text-success { color: var(--brand-green) !important; }
+.bg-success { background-color: var(--brand-green) !important; }
+.btn-outline-success { color: var(--brand-green); border-color: var(--brand-green); }
+.btn-outline-success:hover { background-color: var(--brand-green); color: white; }
+
+
+/* Attractive List */
+.service-list {
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+.service-list li {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: var(--text-body);
+    transition: all 0.3s ease;
+}
+.service-list li:hover {
+    transform: translateX(5px);
+    color: var(--brand-navy);
+}
+.service-list i {
+    font-size: 1.1rem;
+    margin-right: 10px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+/* =========================================
+   7. OUR PROJECTS SECTION
+   ========================================= */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+}
+.project-img-container {
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eee;
+}
+.project-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+    transition: transform 3s ease-in-out;
+}
+.project-img-container:hover .project-img {
+    transform: translateY(calc(-100% + 250px));
+}
+
+/* =========================================
+   8. FAQ SECTION
+   ========================================= */
+.custom-accordion .accordion-item {
+    background-color: #f8faff; 
+    overflow: hidden;
+}
+.custom-accordion .accordion-button {
+    background-color: #ffffff;
+    color: var(--brand-navy);
+    box-shadow: none;
+    padding: 18px 20px;
+    border: 1px solid #eee;
+}
+.custom-accordion .accordion-button:not(.collapsed) {
+    background-color: var(--brand-blue);
+    color: var(--white);
+    border-bottom: 2px solid var(--brand-blue);
+}
+/* Icon Colors in FAQ */
+.custom-accordion .accordion-button:not(.collapsed) i {
+    color: var(--white) !important;
+}
+.custom-accordion .accordion-body {
+    background-color: var(--white);
+    border: 1px solid #eee;
+    border-top: none;
+}
+.custom-accordion .accordion-button::after {
+    background-image: none !important;
+    font-family: "Font Awesome 5 Free";
+    content: "\f067"; /* Plus */
+    font-weight: 900;
+    color: var(--brand-navy);
+}
+.custom-accordion .accordion-button:not(.collapsed)::after {
+    content: "\f068"; /* Minus */
+    color: var(--white);
+}
+
+/* =========================================
+   9. REVIEWS SECTION
+   ========================================= */
+.review-avatar {
+    width: 50px; height: 50px; font-size: 1.2rem; flex-shrink: 0;
+}
+.review-card {
+    transition: transform 0.3s ease;
+    border-left: 5px solid var(--brand-blue) !important;
+}
+.review-card:hover { transform: translateX(5px); }
+.form-control:focus, .form-select:focus {
+    box-shadow: none;
+    border-color: var(--brand-blue);
+}
+
+/* =========================================
+   10. FOOTER SECTION
+   ========================================= */
+.footer-dark {
+    background-color: #0a1930; /* Very Dark Navy matching Brand */
+    font-size: 0.95rem;
+}
+.section-title::after {
+    content: ''; position: absolute; left: 0; bottom: -10px;
+    width: 40px; height: 3px;
+    background-color: var(--brand-yellow); /* Yellow Underline in Footer */
+    border-radius: 2px;
+}
+.hover-white:hover { color: #fff !important; transition: color 0.3s ease; }
+.social-btn {
+    width: 40px; height: 40px;
+    background-color: rgba(255,255,255,0.1);
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%; color: #fff; transition: all 0.3s ease;
+}
+.social-btn:hover {
+    background-color: var(--brand-red); /* Red Hover for Social */
+    color: #fff; transform: translateY(-3px);
+}
+.footer-dark ul li { margin-bottom: 8px; }
+
+@media (max-width: 768px) {
+    .footer-dark { text-align: center; }
+    .section-title::after { left: 50%; transform: translateX(-50%); }
+    .d-flex.align-items-start { justify-content: center; }
+    .social-btn { margin: 0 auto; }
+    .d-flex.gap-3 { justify-content: center; }
+}
+
+/* =========================================
+   11. CONTACT & MAP SECTION STYLES
+   ========================================= */
+
+/* Map Container */
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 450px; /* Mobile par bhi map bada dikhe */
+    display: block;
+}
+
+/* Icon Box Styling */
+.icon-box {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0; /* Icon size fix rahega */
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect on Info Row */
+.d-flex:hover .icon-box {
+    transform: scale(1.1); /* Hover par icon thoda bada hoga */
+    background-color: var(--primary-blue) !important;
+    color: white !important;
+}
+
+/* Text Hover Effect */
+.hover-primary:hover {
+    color: var(--primary-blue) !important;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 991px) {
+    .map-container iframe {
+        min-height: 300px; /* Mobile par height thodi kam */
+    }
+    
+    .contact-card {
+        padding: 20px !important;
+    }
+    
+    .icon-box {
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
+    }
+}
+
+/* =========================================
+   12. PRICING TABS STYLES (Final Fix)
+   ========================================= */
+
+/* --- Desktop View (Default) --- */
+.nav-pills {
+    margin-bottom: 2rem;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-pills .nav-link {
+    color: var(--brand-navy);
+    background-color: #fff;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+.nav-pills .nav-link.active, 
+.nav-pills .show > .nav-link {
+    background-color: var(--brand-blue);
+    color: var(--white);
+    border-color: var(--brand-blue);
+    box-shadow: 0 5px 15px rgba(40, 86, 182, 0.3);
+}
+
+.nav-pills .nav-link:hover:not(.active) {
+    background-color: #f8f9fa;
+    color: var(--brand-red);
+    transform: translateY(-2px);
+}
+
+/* Pricing Card Styling */
+.border-top-primary { border-top: 5px solid var(--brand-blue) !important; }
+.pricing-card { transition: transform 0.3s ease; }
+.pricing-card:hover { transform: translateY(-10px); }
+
+
+/* --- MOBILE VIEW FIX (Scrollable & Compact) --- */
+@media (max-width: 991px) {
+    
+    #pills-tab {
+        display: flex;
+        flex-wrap: nowrap;              /* Ensure they stay in one line */
+        overflow-x: auto;               /* Enable scrolling */
+        overflow-y: hidden;
+        
+        /* CRITICAL FIXES FOR SPACING */
+        justify-content: flex-start !important; /* Force items to start from left */
+        gap: 10px !important;           /* Fixed small gap between tabs */
+        padding-left: 0 !important;     /* Remove default list padding */
+        padding-right: 0 !important;
+        
+        white-space: nowrap;
+        padding-bottom: 10px;
+        margin-bottom: 20px !important;
+        
+        /* Hide Scrollbar */
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        -webkit-overflow-scrolling: touch; 
+    }
+
+    /* Hide Scrollbar for Chrome/Safari */
+    #pills-tab::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Fix for individual items */
+    .nav-pills .nav-item {
+        flex: 0 0 auto !important;      /* Prevent shrinking or growing */
+        width: auto !important;
+        margin: 0 !important;           /* Remove any extra margins */
+    }
+
+    /* Link Styling */
+    .nav-pills .nav-link {
+        font-size: 0.85rem;
+        padding: 8px 20px !important;   /* Compact padding */
+        margin-bottom: 0;
+        white-space: nowrap;
+        border-radius: 50px;
+    }
+}
+
+/* =========================================
+   READ MORE BUTTON CUSTOMIZATION
+   ========================================= */
+
+.btn-width-control {
+    /* Is value ko change karke width control karein */
+    min-width: 100%; 
+    
+    /* Agar button ko full width karna ho to niche wali line uncomment karein */
+    /* width: 100%; */
+    
+    transition: all 0.3s ease;
+}
+
+.btn-width-control:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* =========================================
+   BLOG SIDEBAR STYLES
+   ========================================= */
+
+/* Category List Hover Effect */
+.category-list li a {
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+    transition: all 0.3s ease;
+}
+.category-list li:last-child a {
+    border-bottom: none;
+}
+.category-list li a:hover {
+    color: var(--brand-blue) !important;
+    padding-left: 5px; /* Thoda slide effect */
+}
+.category-list .badge {
+    transition: all 0.3s ease;
+}
+.category-list li a:hover .badge {
+    background-color: var(--brand-blue) !important;
+    color: #fff !important;
+}
+
+/* Image Zoom Effect (Same as previous blog) */
+.blog-card:hover .blog-img-wrapper img {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+/* ======================== BLOG CSS ==================== */
+/* Blog Image Styling */
+.blog-img-wrapper {
+    height: 200px;
+    overflow: hidden;
+}
+.blog-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.blog-card:hover .blog-img-wrapper img {
+    transform: scale(1.1);
+}
+

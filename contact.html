@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Bhaiya - Best Digital Marketing Agency</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ===================== NAV Section ===================== -->
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <!-- <a class="navbar-brand" href="#">
+                Digital <span class="brand-highlight">BHAIYA</span>
+            </a> -->
+            <a class="navbar-brand p-0" href="#">
+                <img src="./logo.png" alt="Digital Bhaiya" class="brand-logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">
+                        Digital <span class="text-primary">BHAIYA</span>
+                    </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./packages.html">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blogs</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0 ms-lg-3 flex-column flex-lg-row">
+                        <a href="tel:+919621056436" class="btn btn-custom btn-call w-100 w-lg-auto">
+                            <i class="fas fa-phone-alt me-1"></i> Call Now
+                        </a>
+                        <a href="https://wa.me/919621056436" class="btn btn-custom btn-whatsapp w-100 w-lg-auto">
+                            <i class="fab fa-whatsapp me-1"></i> Whatsapp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+<section id="contact-form" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow rounded-4 p-4 p-lg-5 bg-white">
+                        
+                        <div class="text-center mb-4">
+                            <h5 class="text-danger fw-bold text-uppercase small">Get Started</h5>
+                            <h2 class="fw-bold text-dark">Book a Free Consultation</h2>
+                            <p class="text-secondary small">Fill the form below and we will reply on WhatsApp instantly.</p>
+                        </div>
+
+                        <form id="whatsappContactForm">
+                            
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-secondary small">Full Name</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light border-end-0 text-muted"><i class="fas fa-user"></i></span>
+                                    <input type="text" id="wName" class="form-control bg-light border-start-0" placeholder="e.g. Rahul Kumar" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-secondary small">Mobile Number</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light border-end-0 text-muted"><i class="fas fa-phone-alt"></i></span>
+                                    <input type="tel" id="wMobile" class="form-control bg-light border-start-0" placeholder="e.g. 9876543210" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-secondary small">Email Address</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light border-end-0 text-muted"><i class="fas fa-envelope"></i></span>
+                                    <input type="email" id="wEmail" class="form-control bg-light border-start-0" placeholder="e.g. rahul@example.com" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-secondary small">Select Service</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light border-end-0 text-muted"><i class="fas fa-briefcase"></i></span>
+                                    <select id="wService" class="form-select bg-light border-start-0" required>
+                                        <option value="" selected disabled>Choose a service...</option>
+                                        <option value="Google Listing (GMB)">Google Listing (GMB)</option>
+                                        <option value="Google Ads">Google Ads</option>
+                                        <option value="Social Media Marketing">Social Media Marketing</option>
+                                        <option value="Web Development">Web Development</option>
+                                        <option value="SEO Services">SEO Services</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label fw-bold text-secondary small">City</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light border-end-0 text-muted"><i class="fas fa-map-marker-alt"></i></span>
+                                    <input type="text" id="wCity" class="form-control bg-light border-start-0" placeholder="e.g. Lucknow" required>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-success w-100 rounded-pill py-3 fw-bold shadow-sm">
+                                Send via WhatsApp <i class="fab fa-whatsapp ms-2"></i>
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Start Here -->
+    <footer id="contact" class="footer-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="fw-bold text-white mb-3">Digital <span class="text-primary">BHAIYA</span></h3>
+                    <p class="text-white-50 small mb-3">
+                        (Division of Deecha Management Private Limited)
+                    </p>
+                    <ul class="list-unstyled text-white-50 small">
+                        <li class="mb-1"><strong>CIN:</strong> U47912UP2023PTC184584</li>
+                        <li class="mb-1"><strong>TAN:</strong> LKND10585B</li>
+                        <li><strong>GSTN:</strong> 09AAKCD1193N1Z4</li>
+                    </ul>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold text-white mb-4 position-relative section-title">Noida Office</h5>
+                    <p class="text-white-50 d-flex align-items-start">
+                        <i class="fas fa-map-marker-alt mt-1 me-3 text-primary"></i>
+                        <span>
+                            First Floor, Shop No. 76/77A, <br>
+                            Near Mc Donalds, A Block, <br>
+                            Sector 63, Noida, <br>
+                            Uttar Pradesh 201309
+                        </span>
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="fw-bold text-white mb-4 position-relative section-title">Lucknow Office</h5>
+                    <p class="text-white-50 d-flex align-items-start mb-3">
+                        <i class="fas fa-map-marker-alt mt-1 me-3 text-primary"></i>
+                        <span>
+                            3B SBI Road, Near Janki Plaza, <br>
+                            Sector G, Jankipuram, <br>
+                            Lucknow, Uttar Pradesh 226021
+                        </span>
+                    </p>
+                    <p class="text-white-50 mb-2">
+                        <i class="fas fa-phone-alt me-3 text-primary"></i>
+                        <a href="tel:+919621056436"
+                            class="text-white-50 text-decoration-none hover-white">9621056436</a>
+                    </p>
+                    <p class="text-white-50">
+                        <i class="fas fa-envelope me-3 text-primary"></i>
+                        <a href="mailto:support@digitalbhaiya.in"
+                            class="text-white-50 text-decoration-none hover-white">support@digitalbhaiya.in</a>
+                    </p>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-4 opacity-25">
+
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-white-50 mb-0">
+                        &copy; 2015-2025 All rights reserved. Designed By <a href="#"
+                            class="text-primary text-decoration-none">Digital Bhaiya</a>.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                    <ul class="list-inline mb-0 small">
+                        <li class="list-inline-item"><a href="#"
+                                class="text-white-50 text-decoration-none hover-white">Privacy Policy</a></li>
+                        <li class="list-inline-item mx-2 text-secondary">|</li>
+                        <li class="list-inline-item"><a href="#"
+                                class="text-white-50 text-decoration-none hover-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
