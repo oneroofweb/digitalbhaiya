@@ -228,8 +228,9 @@ nav{
 }
 
 /* =========================================
-   6. SERVICES SECTION
+   6. SERVICES SECTION (Full Width Image Fix)
    ========================================= */
+
 .services-section {
     padding: 80px 0;
     background-color: var(--bg-light);
@@ -240,54 +241,50 @@ nav{
     width: 60px;
     border-radius: 2px;
     margin-top: 15px;
-    background-color: var(--brand-red) !important; /* Brand Red Line */
+    background-color: var(--brand-red) !important;
 }
 
 .service-card {
     background: var(--white);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-top: 4px solid transparent; /* Ready for hover color */
+    border-top: 4px solid transparent; 
+    overflow: hidden; /* Crucial: Ensures image stays inside rounded corners */
 }
 
-/* Multi-color Hover borders matching Logo */
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
-    border-top: 4px solid var(--brand-blue); /* Default hover blue */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important;
+    border-top: 4px solid var(--brand-blue);
 }
 
-.card-badge {
-    display: inline-block;
-    padding: 8px 25px;
-    border-radius: 50px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+/* --- IMAGE STYLING --- */
+
+/* Target the wrapper div that holds the image */
+.service-card .bg-primary {
+    padding: 0 !important; /* Remove padding to let image touch edges */
+    height: 220px !important; /* Set a fixed height for consistency */
+    width: 100%;
+    position: relative;
+    background: #f0f0f0 !important; /* Fallback color */
+    overflow: hidden;
 }
 
-/* Overriding Bootstrap Colors with Brand Colors */
-.text-danger { color: var(--brand-red) !important; }
-.bg-danger { background-color: var(--brand-red) !important; }
-.btn-outline-danger { color: var(--brand-red); border-color: var(--brand-red); }
-.btn-outline-danger:hover { background-color: var(--brand-red); color: white; }
+/* Target the image itself */
+.service-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This makes the image fill the box perfectly */
+    object-position: center;
+    max-height: none !important; /* Override inline style if any */
+    transition: transform 0.5s ease;
+}
 
-.text-primary { color: var(--brand-blue) !important; }
-.bg-primary { background-color: var(--brand-blue) !important; }
-.btn-outline-primary { color: var(--brand-blue); border-color: var(--brand-blue); }
-.btn-outline-primary:hover { background-color: var(--brand-blue); color: white; }
+/* Zoom effect on hover */
+.service-card:hover img {
+    transform: scale(1.1);
+}
 
-.text-warning { color: var(--brand-yellow) !important; }
-.bg-warning { background-color: var(--brand-yellow) !important; color: #fff !important;}
-.btn-outline-warning { color: var(--brand-yellow); border-color: var(--brand-yellow); }
-.btn-outline-warning:hover { background-color: var(--brand-yellow); color: white; }
-
-.text-success { color: var(--brand-green) !important; }
-.bg-success { background-color: var(--brand-green) !important; }
-.btn-outline-success { color: var(--brand-green); border-color: var(--brand-green); }
-.btn-outline-success:hover { background-color: var(--brand-green); color: white; }
-
-
-/* Attractive List */
+/* --- LIST & TEXT STYLING (Existing) --- */
 .service-list {
     padding-left: 0;
     margin-bottom: 1.5rem;
@@ -311,6 +308,17 @@ nav{
     margin-top: 3px;
     flex-shrink: 0;
 }
+
+/* Brand Colors Overrides */
+.text-danger { color: var(--brand-red) !important; }
+.bg-danger { background-color: var(--brand-red) !important; }
+.btn-outline-danger { color: var(--brand-red); border-color: var(--brand-red); }
+.btn-outline-danger:hover { background-color: var(--brand-red); color: white; }
+
+.text-primary { color: var(--brand-blue) !important; }
+.bg-primary { background-color: var(--brand-blue) !important; }
+.btn-outline-primary { color: var(--brand-blue); border-color: var(--brand-blue); }
+.btn-outline-primary:hover { background-color: var(--brand-blue); color: white; }
 
 /* =========================================
    7. OUR PROJECTS SECTION
