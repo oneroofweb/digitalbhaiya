@@ -650,3 +650,47 @@ nav{
     transform: scale(1.1);
 }
 
+/* ========================= Package WP Button ========================= */
+.wp-btn{
+    background-color: #25D366;
+    color: #fff;
+}
+.wp-btn:hover{
+    border: 1px solid #25D366;;
+}
+
+
+/* =========================================
+   BLOG DETAIL SECTION STYLES
+   ========================================= */
+
+/* Soft Blue Badge */
+.bg-primary-soft {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: var(--brand-blue);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Breadcrumb Divider */
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "›";
+    color: #999;
+}
+
+/* Blog Content Typography */
+.blog-content p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.blog-content h3 {
+    font-size: 1.5rem;
+}
+
+/* Feature Image Height on Mobile */
+@media (max-width: 768px) {
+    .blog-detail-img img {
+        min-height: 250px !important;
+    }
+}
