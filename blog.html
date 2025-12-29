@@ -18,9 +18,6 @@
     <!-- ===================== NAV Section ===================== -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
         <div class="container">
-            <!-- <a class="navbar-brand" href="#">
-                Digital <span class="brand-highlight">BHAIYA</span>
-            </a> -->
             <a class="navbar-brand p-0" href="#">
                 <img src="./logo.png" alt="Digital Bhaiya" class="brand-logo">
             </a>
@@ -43,7 +40,7 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav ms-auto align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
@@ -52,18 +49,45 @@
                             <a class="nav-link" href="./packages.html">Packages</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="./contact.html">Contact</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="./blog.html">Blogs</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle rounded-pill px-3 border ms-lg-2 my-2 my-lg-0 d-flex align-items-center justify-content-center"
+                                href="#" id="locationDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="background-color: #f8f9fa;">
+                                <i class="fas fa-map-marker-alt text-danger me-2"></i> <span id="currentCity"
+                                    class="fw-bold text-dark small">Select City</span>
+                            </a>
+                            <ul class="dropdown-menu border-0 shadow-lg rounded-4 p-2"
+                                aria-labelledby="locationDropdown">
+                                <li>
+                                    <a class="dropdown-item rounded-3 py-2 fw-medium" href="./index.html">
+                                        <i class="fas fa-city text-secondary me-2"></i> Lucknow
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item rounded-3 py-2 fw-medium" href="noida.html">
+                                        <i class="fas fa-building text-secondary me-2"></i> Noida
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item rounded-3 py-2 fw-medium" href="delhi.html">
+                                        <i class="fas fa-landmark text-secondary me-2"></i> Mumbai
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
 
-                    <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0 ms-lg-3 flex-column flex-lg-row">
-                        <a href="tel:+919621056436" class="btn btn-custom btn-call w-100 w-lg-auto">
-                            <i class="fas fa-phone-alt me-1"></i> Call Now
+                    <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0 ms-lg-3">
+                        <a href="tel:+919621056436" class="btn btn-custom btn-call flex-grow-1">
+                            <i class="fas fa-phone me-1"></i> Call Now
                         </a>
-                        <a href="https://wa.me/919621056436" class="btn btn-custom btn-whatsapp w-100 w-lg-auto">
+                        <a href="https://wa.me/919621056436" class="btn btn-custom btn-whatsapp flex-grow-1">
                             <i class="fab fa-whatsapp me-1"></i> Whatsapp
                         </a>
                     </div>
