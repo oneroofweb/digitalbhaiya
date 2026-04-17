@@ -362,6 +362,56 @@ nav{
 }
 
 /* =========================================
+   8. Blog Section - Home
+   ========================================= */
+   /* ============================================ 
+   BLOG SECTION STYLING
+   ============================================ */
+
+.blog-card {
+    transition: all 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.blog-img {
+    transition: transform 0.5s ease;
+}
+
+.blog-card:hover .blog-img {
+    transform: scale(1.1); /* Image zooms in on hover */
+}
+
+.blog-title a {
+    transition: color 0.3s ease;
+}
+
+.blog-card:hover .blog-title a {
+    color: var(--theme-primary, #0d6efd) !important; /* Title color changes on hover */
+}
+
+.read-more-link i {
+    transition: transform 0.3s ease;
+}
+
+.read-more-link:hover i {
+    transform: translateX(5px); /* Arrow moves right on hover */
+}
+
+/* Load More Button Spin Animation Class (Optional for JS) */
+.spin-icon {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+
+/* =========================================
    8. FAQ SECTION
    ========================================= */
 .custom-accordion .accordion-item {
