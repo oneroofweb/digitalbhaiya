@@ -166,3 +166,31 @@
             }
         });
 
+        // ===================== Blog Detail - Consultation Form WP =======================
+
+    document.getElementById('requestForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Form ko refresh hone se rokne ke liye
+
+        // 1. Apna WhatsApp Number yahan badlein (91 for India)
+        var myPhoneNumber = "919621056436"; 
+
+        // 2. Form ka data nikalna
+        var name = document.getElementById('reqName').value;
+        var business = document.getElementById('reqBusiness').value;
+        var mobile = document.getElementById('reqMobile').value;
+        var location = document.getElementById('reqLocation').value;
+
+        // 3. Message design karna
+        var message = "New Request Received!" + "\n\n" +
+                      "*Name:* " + name + "\n" +
+                      "*Business:* " + business + "\n" +
+                      "*Contact:* " + mobile + "\n" +
+                      "*City:* " + location;
+
+        // 4. WhatsApp URL banana aur open karna
+        var url = "https://wa.me/" + myPhoneNumber + "?text=" + encodeURIComponent(message);
+        
+        window.open(url, '_blank').focus();
+    });
+
+

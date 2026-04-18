@@ -7,20 +7,16 @@
     <title>Digital Bhaiya - Best Digital Marketing Agency</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- ===================== NAV Section ===================== -->
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand p-0" href="#">
-                <img src="./logo.png" alt="Digital Bhaiya" class="brand-logo">
+                <img src="./logo.png" alt="Digital Bhaiya" class="brand-logo" style="height: 45px;">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -52,7 +48,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./contact.html">Contact</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="./blog.html">Blogs</a>
                         </li>
@@ -85,10 +80,10 @@
                     </ul>
 
                     <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0 ms-lg-3">
-                        <a href="tel:+919621056436" class="btn btn-custom btn-call flex-grow-1">
+                        <a href="tel:+919621056436" class="btn btn-primary rounded-pill px-4 flex-grow-1">
                             <i class="fas fa-phone me-1"></i> Call Now
                         </a>
-                        <a href="https://wa.me/919621056436" class="btn btn-custom btn-whatsapp flex-grow-1">
+                        <a href="https://wa.me/919621056436" class="btn btn-success rounded-pill px-4 flex-grow-1">
                             <i class="fab fa-whatsapp me-1"></i> Whatsapp
                         </a>
                     </div>
@@ -97,75 +92,123 @@
         </div>
     </nav>
 
-
-<section id="contact-form" class="py-5 bg-light">
+    <section class="py-5 bg-light" id="contact-locations">
         <div class="container py-4">
-            <div class="row justify-content-center">
+            
+            <div class="text-center mb-5">
+                <span class="badge bg-primary-soft text-primary px-3 py-2 rounded-pill fw-bold mb-2">Get in Touch</span>
+                <h2 class="display-6 fw-bold text-dark">Contact Us & Our Offices</h2>
+                <div class="mx-auto mt-3" style="width: 60px; height: 4px; background-color: var(--bs-primary); border-radius: 2px;"></div>
+            </div>
+
+            <div class="row g-5">
                 
-                <div class="col-lg-6">
-                    <div class="card border-0 shadow rounded-4 p-4 p-lg-5 bg-white">
+                <div class="col-lg-5">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 p-lg-5 h-100 bg-white">
+                        <h4 class="fw-bold text-dark mb-2">Send us a Message</h4>
+                        <p class="text-muted small mb-4">Fill out the details below and our team will get back to you shortly.</p>
                         
-                        <div class="text-center mb-4">
-                            <h5 class="text-danger fw-bold text-uppercase small">Get Started</h5>
-                            <h2 class="fw-bold text-dark">Book a Free Consultation</h2>
-                            <p class="text-secondary small">Fill the form below and we will reply on WhatsApp instantly.</p>
+                        <form onsubmit="event.preventDefault(); window.open(`https://wa.me/919621056436?text=Hello,%20I%20need%20assistance.%0A%0A*Name:*%20${encodeURIComponent(document.getElementById('cName').value)}%0A*Business:*%20${encodeURIComponent(document.getElementById('cBusiness').value)}%0A*Contact:*%20${encodeURIComponent(document.getElementById('cPhone').value)}%0A*Location:*%20${encodeURIComponent(document.getElementById('cLocation').value)}`, '_blank');">
+                            
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control bg-light border-0" id="cName" placeholder="Your Name" required>
+                                <label for="cName" class="text-secondary small">Your Name *</label>
+                            </div>
+                            
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control bg-light border-0" id="cBusiness" placeholder="Business Name" required>
+                                <label for="cBusiness" class="text-secondary small">Business Name *</label>
+                            </div>
+                            
+                            <div class="form-floating mb-3">
+                                <input type="tel" class="form-control bg-light border-0" id="cPhone" placeholder="Contact Number" required>
+                                <label for="cPhone" class="text-secondary small">Contact Number *</label>
+                            </div>
+                            
+                            <div class="form-floating mb-4">
+                                <input type="text" class="form-control bg-light border-0" id="cLocation" placeholder="Location" required>
+                                <label for="cLocation" class="text-secondary small">Location (City) *</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary w-100 py-3 fw-bold rounded-pill shadow-sm mt-2">
+                                Submit Details <i class="fas fa-paper-plane ms-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="d-flex flex-column gap-4 h-100 justify-content-center">
+                        
+                        <div class="card border-0 shadow-sm rounded-4 p-4 office-card hover-effect">
+                            <div class="row align-items-center g-3">
+                                <div class="col-md-8 col-sm-12">
+                                    <div class="d-flex align-items-start">
+                                        <div class="icon-circle bg-primary-soft text-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3" style="width: 50px; height: 50px; background-color: #e6f0ff;">
+                                            <i class="fas fa-building fs-5"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold text-dark mb-1">Noida Office</h5>
+                                            <p class="text-muted small mb-0">
+                                                First Floor, Shop No. 76/77A, Near Mc Donalds, A Block, Sector 63, Noida, UP 201309
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 text-md-end text-start mt-3 mt-md-0 border-start-md ps-md-3">
+                                    <a href="https://maps.google.com/?q=Sector+63+Noida" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-3 fw-bold w-100">
+                                        <i class="fas fa-directions me-1"></i> Direction
+                                    </a>
+                                </div>
+                            </div>
                         </div>
 
-                        <form id="whatsappContactForm">
-                            
-                            <div class="mb-3">
-                                <label class="form-label fw-bold text-secondary small">Full Name</label>
-                                <div class="input-group">
-                                    <span class="input-group-text bg-light border-end-0 text-muted"><i class="fas fa-user"></i></span>
-                                    <input type="text" id="wName" class="form-control bg-light border-start-0" placeholder="e.g. Rahul Kumar" required>
+                        <div class="card border-0 shadow-sm rounded-4 p-4 office-card hover-effect">
+                            <div class="row align-items-center g-3">
+                                <div class="col-md-8 col-sm-12">
+                                    <div class="d-flex align-items-start">
+                                        <div class="icon-circle bg-primary-soft text-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3" style="width: 50px; height: 50px; background-color: #e6f0ff;">
+                                            <i class="fas fa-city fs-5"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold text-dark mb-1">Lucknow Office</h5>
+                                            <p class="text-muted small mb-0">
+                                                3B SBI Road, Near Janki Plaza, Sector G, Jankipuram, Lucknow, UP 226021
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 text-md-end text-start mt-3 mt-md-0 border-start-md ps-md-3">
+                                    <a href="https://maps.google.com/?q=Jankipuram+Lucknow" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-3 fw-bold w-100">
+                                        <i class="fas fa-directions me-1"></i> Direction
+                                    </a>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="mb-3">
-                                <label class="form-label fw-bold text-secondary small">Mobile Number</label>
-                                <div class="input-group">
-                                    <span class="input-group-text bg-light border-end-0 text-muted"><i class="fas fa-phone-alt"></i></span>
-                                    <input type="tel" id="wMobile" class="form-control bg-light border-start-0" placeholder="e.g. 9876543210" required>
+                        <div class="card border-0 shadow-sm rounded-4 p-4 office-card hover-effect">
+                            <div class="row align-items-center g-3">
+                                <div class="col-md-8 col-sm-12">
+                                    <div class="d-flex align-items-start">
+                                        <div class="icon-circle bg-primary-soft text-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3" style="width: 50px; height: 50px; background-color: #e6f0ff;">
+                                            <i class="fas fa-landmark fs-5"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold text-dark mb-1">Mumbai Office</h5>
+                                            <p class="text-muted small mb-0">
+                                                402, Business Park, Andheri West, Mumbai, Maharashtra 400053
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 text-md-end text-start mt-3 mt-md-0 border-start-md ps-md-3">
+                                    <a href="https://maps.google.com/?q=Andheri+West+Mumbai" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-3 fw-bold w-100">
+                                        <i class="fas fa-directions me-1"></i> Direction
+                                    </a>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="mb-3">
-                                <label class="form-label fw-bold text-secondary small">Email Address</label>
-                                <div class="input-group">
-                                    <span class="input-group-text bg-light border-end-0 text-muted"><i class="fas fa-envelope"></i></span>
-                                    <input type="email" id="wEmail" class="form-control bg-light border-start-0" placeholder="e.g. rahul@example.com" required>
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <label class="form-label fw-bold text-secondary small">Select Service</label>
-                                <div class="input-group">
-                                    <span class="input-group-text bg-light border-end-0 text-muted"><i class="fas fa-briefcase"></i></span>
-                                    <select id="wService" class="form-select bg-light border-start-0" required>
-                                        <option value="" selected disabled>Choose a service...</option>
-                                        <option value="Google Listing (GMB)">Google Listing (GMB)</option>
-                                        <option value="Google Ads">Google Ads</option>
-                                        <option value="Social Media Marketing">Social Media Marketing</option>
-                                        <option value="Web Development">Web Development</option>
-                                        <option value="SEO Services">SEO Services</option>
-                                        <option value="Other">Other</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="mb-4">
-                                <label class="form-label fw-bold text-secondary small">City</label>
-                                <div class="input-group">
-                                    <span class="input-group-text bg-light border-end-0 text-muted"><i class="fas fa-map-marker-alt"></i></span>
-                                    <input type="text" id="wCity" class="form-control bg-light border-start-0" placeholder="e.g. Lucknow" required>
-                                </div>
-                            </div>
-
-                            <button type="submit" class="btn btn-success w-100 rounded-pill py-3 fw-bold shadow-sm">
-                                Send via WhatsApp <i class="fab fa-whatsapp ms-2"></i>
-                            </button>
-
-                        </form>
                     </div>
                 </div>
 
@@ -173,8 +216,7 @@
         </div>
     </section>
 
-    <!-- Footer Start Here -->
-    <footer id="contact" class="footer-dark text-white pt-5 pb-3">
+    <footer id="contact" class="footer-dark text-white pt-5 pb-3 bg-dark">
         <div class="container">
             <div class="row g-4">
 
@@ -188,17 +230,17 @@
                         <li class="mb-1"><strong>TAN:</strong> LKND10585B</li>
                         <li><strong>GSTN:</strong> 09AAKCD1193N1Z4</li>
                     </ul>
-                    <div class="d-flex gap-3 mt-4">
-                        <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                    <div class="d-flex gap-2 mt-4 flex-row">
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6">
                     <h5 class="fw-bold text-white mb-4 position-relative section-title">Noida Office</h5>
-                    <p class="text-white-50 d-flex align-items-start">
+                    <p class="text-white-50 d-flex align-items-start small">
                         <i class="fas fa-map-marker-alt mt-1 me-3 text-primary"></i>
                         <span>
                             First Floor, Shop No. 76/77A, <br>
@@ -211,7 +253,7 @@
 
                 <div class="col-lg-4 col-md-12">
                     <h5 class="fw-bold text-white mb-4 position-relative section-title">Lucknow Office</h5>
-                    <p class="text-white-50 d-flex align-items-start mb-3">
+                    <p class="text-white-50 d-flex align-items-start mb-3 small">
                         <i class="fas fa-map-marker-alt mt-1 me-3 text-primary"></i>
                         <span>
                             3B SBI Road, Near Janki Plaza, <br>
@@ -219,15 +261,13 @@
                             Lucknow, Uttar Pradesh 226021
                         </span>
                     </p>
-                    <p class="text-white-50 mb-2">
-                        <i class="fas fa-phone-alt me-3 text-primary"></i>
-                        <a href="tel:+919621056436"
-                            class="text-white-50 text-decoration-none hover-white">9621056436</a>
+                    <p class="text-white-50 mb-2 small">
+                        <i class="fas fa-phone me-3 text-primary"></i>
+                        <a href="tel:+919621056436" class="text-white-50 text-decoration-none">9621056436</a>
                     </p>
-                    <p class="text-white-50">
+                    <p class="text-white-50 small">
                         <i class="fas fa-envelope me-3 text-primary"></i>
-                        <a href="mailto:support@digitalbhaiya.in"
-                            class="text-white-50 text-decoration-none hover-white">support@digitalbhaiya.in</a>
+                        <a href="mailto:support@digitalbhaiya.in" class="text-white-50 text-decoration-none">support@digitalbhaiya.in</a>
                     </p>
                 </div>
 
@@ -238,22 +278,30 @@
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start">
                     <p class="small text-white-50 mb-0">
-                        &copy; 2015-2025 All rights reserved. Designed By <a href="#"
-                            class="text-primary text-decoration-none">Digital Bhaiya</a>.
+                        &copy; 2015-2025 All rights reserved. Designed By <a href="#" class="text-primary text-decoration-none">Digital Bhaiya</a>.
                     </p>
                 </div>
                 <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
                     <ul class="list-inline mb-0 small">
-                        <li class="list-inline-item"><a href="#"
-                                class="text-white-50 text-decoration-none hover-white">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>
                         <li class="list-inline-item mx-2 text-secondary">|</li>
-                        <li class="list-inline-item"><a href="#"
-                                class="text-white-50 text-decoration-none hover-white">Terms of Service</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white-50 text-decoration-none">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+
+    <style>
+        .hover-effect { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-effect:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important; }
+        
+        /* Optional: Border separator for desktop view in office cards */
+        @media (min-width: 768px) {
+            .border-start-md { border-left: 1px solid #e9ecef; }
+        }
+    </style>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
